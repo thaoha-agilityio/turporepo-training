@@ -1,0 +1,2 @@
+cd price-gold
+npx --no -- commitlint --edit $1

@@ -12,7 +12,8 @@ export const formatCurrency = (value: number, decimals: number = 2): string => {
   }).format(value);
 };
 
-export const formatDate = (date: Date) => date.toISOString().split('T')[0];
+export const formatDate = (date: Date): string =>
+  date.toISOString().split('T')[0] ?? '';
 
 /**
  * Get the latest available date for the API, which is the previous day.

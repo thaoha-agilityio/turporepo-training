@@ -1,5 +1,5 @@
 {
-  "name": "@packages/utils",
+  "name": "@repo/utils",
   "version": "0.0.0",
   "private": true,
   "main": "src/index.ts",
@@ -8,8 +8,8 @@
     ".": "./src/index.ts"
   },
   "devDependencies": {
-    "@packages/eslint-config": "workspace:*",
-    "@packages/prettier-config": "workspace:*",
-    "@packages/typescript-config": "workspace:*"
+    "@repo/eslint-config": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
   }
 }

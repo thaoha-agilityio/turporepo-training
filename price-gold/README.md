@@ -1,4 +1,4 @@
-# PWA Practice
+# Turporepo Practice
 
 ## Overview
 
@@ -19,6 +19,7 @@
 - Jest
 - Vite
 - PWA Vite Plugin
+- Turborepo
 
 ## Features
 
@@ -38,7 +39,7 @@
 1. **Clone the repository:**
 
    ```bash
-   git@gitlab.asoft-python.com:thao.ha/pwa-training.git
+   git@gitlab.asoft-python.com:thao.ha/turborepo-training.git
    ```
 
 2. **Checkout into "dev" branch:**
@@ -66,14 +67,14 @@
 
 5. **Start the project**
 
-   | Script         | Description                                           |
-   | -------------- | ----------------------------------------------------- |
-   | `pnpm dev`     | Starts the development server using Vite              |
-   | `pnpm build`   | Builds the app for production using TypeScript + Vite |
-   | `pnpm preview` | Serves the production build locally                   |
-   | `pnpm lint`    | Lints the codebase with ESLint                        |
-   | `pnpm test`    | Runs unit tests using Vitest                          |
+   | Script         | Description                                    |
+   | -------------- | ---------------------------------------------- |
+   | `pnpm dev`     | Starts the development server using Vite       |
+   | `pnpm build`   | Builds the app for production using tsc + Vite |
+   | `pnpm preview` | Serves the production build locally            |
+   | `pnpm lint`    | Lints the codebase with ESLint                 |
+   | `pnpm test`    | Runs unit tests using Vitest                   |
 
 ## Plan
 
-- [Link](https://docs.google.com/document/d/1G-aK2vc8dLZXTTdt6Ff85S9M6QyoqPX3YfPB9vWMD0A/edit?tab=t.0)
+- [Link](https://docs.google.com/document/d/1jChbuBaBFPdYEeBK2H4LF8XA2iHH4SazP8pUM3S-2oU/edit?tab=t.0)

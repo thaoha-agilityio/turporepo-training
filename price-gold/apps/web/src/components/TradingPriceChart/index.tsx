@@ -8,7 +8,7 @@ import { PeriodType } from '@/types';
 import { formatXAxisTick, generatePriceData } from '@/utils';
 
 // Components
-import { Button } from '../common/Button';
+import { Button } from '@repo/ui';
 
 export const TradingPriceChart = () => {
   const [selectedPeriod, setSelectedPeriod] = useState<PeriodType>('24H');

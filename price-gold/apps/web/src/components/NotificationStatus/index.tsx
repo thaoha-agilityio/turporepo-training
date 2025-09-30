@@ -1,4 +1,4 @@
-import { Button, Typography } from '@/components';
+import { Button, Typography } from '@repo/ui';
 
 interface NotificationInfoProps {
   isSupported: boolean;

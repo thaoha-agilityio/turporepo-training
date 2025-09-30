@@ -3,15 +3,12 @@ import { toast } from 'sonner';
 
 // Components
 import {
-  Button,
   PriceGold,
-  SelectDropdown,
-  Tabs,
-  Typography,
   TradingPriceChart,
   PullToRefreshIndicator,
   NotificationInfo,
 } from '@/components';
+import { Button, Tabs, SelectDropdown, Typography } from '@repo/ui';
 
 // Constants
 import { CURRENCIES_OPTIONS, NOTIFICATION_MESSAGES } from '@/constants';

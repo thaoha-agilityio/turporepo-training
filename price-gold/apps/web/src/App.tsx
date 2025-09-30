@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Home } from './pages';
 
 // Components
-import { Toaster } from './components';
+import { Toaster } from '@repo/ui';
 
 const queryClient = new QueryClient({
   defaultOptions: {

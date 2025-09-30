@@ -1,8 +1,8 @@
 // Components
-import { Typography } from '../common/Typography';
+import { Typography } from '@repo/ui';
 
 // Utils
-import { formatChange, formatCurrency, formatPercent } from '@/utils';
+import { formatChange, formatCurrency, formatPercent } from '@repo/utils';
 
 interface PriceGoldProps {
   latestPrice?: number;

@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Tabs Component renders Tabs component is correct 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex flex-col gap-2 w-full"
+        data-orientation="horizontal"
+        data-slot="tabs"
+        dir="ltr"
+      >
+        <div
+          class="w-full bg-transparent"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="bg-transparent text-muted-foreground inline-flex h-9 w-fit items-center justify-center rounded-lg p-[3px]"
+            data-orientation="horizontal"
+            data-slot="tabs-list"
+            role="tablist"
+            style="outline: none;"
+            tabindex="0"
+          >
+            <button
+              aria-controls="radix-«r0»-content-profile"
+              aria-selected="true"
+              class="relative data-[state=active]:text-secondary flex-1 items-center justify-center gap-1.5 px-2 py- font-medium whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 data-[state=active]:after:absolute data-[state=active]:after:bottom-0 data-[state=active]:after:left-0 data-[state=active]:after:right-0 data-[state=active]:after:h-[2px] data-[state=active]:after:bg-primary pb-2 cursor-pointer text-md md:text-xl text-secondary"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-slot="tabs-trigger"
+              data-state="active"
+              id="radix-«r0»-trigger-profile"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Profile
+            </button>
+            <button
+              aria-controls="radix-«r0»-content-security"
+              aria-selected="false"
+              class="relative data-[state=active]:text-secondary flex-1 items-center justify-center gap-1.5 px-2 py- font-medium whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 data-[state=active]:after:absolute data-[state=active]:after:bottom-0 data-[state=active]:after:left-0 data-[state=active]:after:right-0 data-[state=active]:after:h-[2px] data-[state=active]:after:bg-primary pb-2 cursor-pointer text-md md:text-xl text-secondary"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-slot="tabs-trigger"
+              data-state="inactive"
+              id="radix-«r0»-trigger-security"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Security
+            </button>
+          </div>
+        </div>
+        <div
+          aria-labelledby="radix-«r0»-trigger-profile"
+          class="flex-1 outline-none mt-2"
+          data-orientation="horizontal"
+          data-slot="tabs-content"
+          data-state="active"
+          id="radix-«r0»-content-profile"
+          role="tabpanel"
+          style="animation-duration: 0s;"
+          tabindex="0"
+        >
+          <div>
+            Your profile content
+          </div>
+        </div>
+        <div
+          aria-labelledby="radix-«r0»-trigger-security"
+          class="flex-1 outline-none mt-2"
+          data-orientation="horizontal"
+          data-slot="tabs-content"
+          data-state="inactive"
+          hidden=""
+          id="radix-«r0»-content-security"
+          role="tabpanel"
+          tabindex="0"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex flex-col gap-2 w-full"
+      data-orientation="horizontal"
+      data-slot="tabs"
+      dir="ltr"
+    >
+      <div
+        class="w-full bg-transparent"
+      >
+        <div
+          aria-orientation="horizontal"
+          class="bg-transparent text-muted-foreground inline-flex h-9 w-fit items-center justify-center rounded-lg p-[3px]"
+          data-orientation="horizontal"
+          data-slot="tabs-list"
+          role="tablist"
+          style="outline: none;"
+          tabindex="0"
+        >
+          <button
+            aria-controls="radix-«r0»-content-profile"
+            aria-selected="true"
+            class="relative data-[state=active]:text-secondary flex-1 items-center justify-center gap-1.5 px-2 py- font-medium whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 data-[state=active]:after:absolute data-[state=active]:after:bottom-0 data-[state=active]:after:left-0 data-[state=active]:after:right-0 data-[state=active]:after:h-[2px] data-[state=active]:after:bg-primary pb-2 cursor-pointer text-md md:text-xl text-secondary"
+            data-orientation="horizontal"
+            data-radix-collection-item=""
+            data-slot="tabs-trigger"
+            data-state="active"
+            id="radix-«r0»-trigger-profile"
+            role="tab"
+            tabindex="-1"
+            type="button"
+          >
+            Profile
+          </button>
+          <button
+            aria-controls="radix-«r0»-content-security"
+            aria-selected="false"
+            class="relative data-[state=active]:text-secondary flex-1 items-center justify-center gap-1.5 px-2 py- font-medium whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 data-[state=active]:after:absolute data-[state=active]:after:bottom-0 data-[state=active]:after:left-0 data-[state=active]:after:right-0 data-[state=active]:after:h-[2px] data-[state=active]:after:bg-primary pb-2 cursor-pointer text-md md:text-xl text-secondary"
+            data-orientation="horizontal"
+            data-radix-collection-item=""
+            data-slot="tabs-trigger"
+            data-state="inactive"
+            id="radix-«r0»-trigger-security"
+            role="tab"
+            tabindex="-1"
+            type="button"
+          >
+            Security
+          </button>
+        </div>
+      </div>
+      <div
+        aria-labelledby="radix-«r0»-trigger-profile"
+        class="flex-1 outline-none mt-2"
+        data-orientation="horizontal"
+        data-slot="tabs-content"
+        data-state="active"
+        id="radix-«r0»-content-profile"
+        role="tabpanel"
+        style="animation-duration: 0s;"
+        tabindex="0"
+      >
+        <div>
+          Your profile content
+        </div>
+      </div>
+      <div
+        aria-labelledby="radix-«r0»-trigger-security"
+        class="flex-1 outline-none mt-2"
+        data-orientation="horizontal"
+        data-slot="tabs-content"
+        data-state="inactive"
+        hidden=""
+        id="radix-«r0»-content-security"
+        role="tabpanel"
+        tabindex="0"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

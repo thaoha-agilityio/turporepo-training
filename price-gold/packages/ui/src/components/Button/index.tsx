@@ -56,8 +56,11 @@ const Button = ({
       disabled={isLoading || disabled}
       {...props}
     >
-      {isLoading && <Loader2 className="animate-spin size-4 shrink-0" />}
-      {!isLoading && children}
+      {isLoading ? (
+        <Loader2 className="animate-spin size-4 shrink-0" />
+      ) : (
+        children
+      )}
     </Comp>
   );
 };

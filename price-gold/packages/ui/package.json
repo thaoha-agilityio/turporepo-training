@@ -6,6 +6,9 @@
     ".": "./src/index.ts",
     "./styles/index.css": "./src/styles/index.css"
   },
+  "sideEffects": [
+    "./src/styles/index.css"
+  ],
   "dependencies": {
     "@radix-ui/react-select": "^2.2.6",
     "@radix-ui/react-slot": "^1.2.3",
@@ -20,12 +23,6 @@
     "recharts": "^3.1.2",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.3.1"
-  },
-  "peerDependencies": {
-    "react": "^18 || ^19",
-    "react-dom": "^18 || ^19",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/vite": "^4.0.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

@@ -1,4 +1,4 @@
-import { act, renderHook } from '@/utils/text-utils';
+import { act, renderHook } from '@repo/utils';
 
 // Hook
 import { useOnlineStatus } from '../useOnlineStatus';

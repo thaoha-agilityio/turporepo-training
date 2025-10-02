@@ -5,7 +5,7 @@ import { apiClient } from '@/services';
 import { INIT_GOLD_PRICE, INIT_GOLD_PRICE_HISTORICAL } from '@/constants';
 
 // Utils
-import { renderHook, waitFor, wrapper } from '@/utils/text-utils';
+import { renderHook, waitFor, wrapper } from '@repo/utils';
 
 // Hooks
 import { useHistoricalPriceGold, useLatestPriceGold } from '../usePriceGold';

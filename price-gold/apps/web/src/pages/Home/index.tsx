@@ -25,7 +25,7 @@ import {
 } from '@/hooks';
 
 // utils
-import { isIOS, isStandalone } from '@/utils';
+import { isIOS, isStandalone } from '@repo/utils';
 
 export const Home = () => {
   const [currency, setCurrency] = useState(CURRENCIES_OPTIONS[0].value);

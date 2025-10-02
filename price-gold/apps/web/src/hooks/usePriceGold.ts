@@ -16,7 +16,7 @@ import {
 import { apiClient } from '@/services';
 
 // Utils
-import { latestAvailableDate, previousAvailableDate } from '@/utils';
+import { latestAvailableDate, previousAvailableDate } from '@repo/utils';
 
 export const useLatestPriceGold = (currency = 'USD') => {
   const { data, ...rest } = useQuery<GoldPrice, string>({

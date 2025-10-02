@@ -132,5 +132,5 @@ jobs:
 
       - name: Deployment Summary
         run: |
-          echo "🚀 Deployment completed successfully!"
-          echo "🔗 URL: ${{ steps.deploy.outputs.preview-url }}"
+          echo "Deployment completed successfully!"
+          echo "URL: ${{ steps.deploy.outputs.preview-url }}"

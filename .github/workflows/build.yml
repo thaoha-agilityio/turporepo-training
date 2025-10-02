@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches: ["dev"]
+    paths:
+      - "price-gold/**"
+      - ".github/workflows/build.yml"
+  pull_request:
+    branches: ["dev"]
+    paths:
+      - "price-gold/**"
+      - ".github/workflows/build.yml"
+jobs:
+  build:
+    name: Build and Test
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment || 'Production' }}
+    # To use Remote Caching, uncomment the next lines and follow the steps below.
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+      API_URL: ${{ secrets.VITE_PUBLIC_API_URL }}
+      API_KEY: ${{ secrets.VITE_API_KEY}}
+      FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY}}
+      FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN}}
+      FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID}}
+      FIREBASE_STORAGE_BUCKET: ${{ secrets.VITE_FIREBASE_STORAGE_BUCKET}}
+      FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID}}
+      FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID}}
+      FIREBASE_MEASUREMENT_ID: ${{ secrets.VITE_FIREBASE_MEASUREMENT_ID}}
+      FIREBASE_VAPID_KEY: ${{ secrets.VITE_FIREBASE_VAPID_KEY}}
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: Cache turbo build setup
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-turbo-
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
+
+      - name: Test
+        run: pnpm test

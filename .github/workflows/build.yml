@@ -104,3 +104,8 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: ./price-gold
           vercel-args: "--prod"
+
+      - name: Deployment Summary
+        run: |
+          echo "Deployment completed successfully!"
+          echo "URL: ${{ steps.deploy.outputs.preview-url }}"

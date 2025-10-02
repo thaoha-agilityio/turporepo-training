@@ -1,7 +1,10 @@
 {
-  "buildCommand": "pnpm build",
-  "outputDirectory": "dist",
-  "installCommand": "pnpm install",
-  "framework": null,
-  "devCommand": "pnpm dev"
+  "projects": {
+    "web": {
+      "rootDirectory": "apps/web",
+      "buildCommand": "pnpm build --filter=web",
+      "outputDirectory": "apps/web/dist",
+      "framework": "vite"
+    }
+  }
 }

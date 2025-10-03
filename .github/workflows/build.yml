@@ -111,11 +111,11 @@ jobs:
           cache-dependency-path: "price-gold/pnpm-lock.yaml"
 
       - name: Install dependencies
-        # working-directory: ./price-gold
+        working-directory: ./price-gold
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        # working-directory: ./price-gold
+        working-directory: ./price-gold
         run: pnpm build
 
       - name: Install Vercel CLI

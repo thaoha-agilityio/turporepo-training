@@ -94,10 +94,6 @@ jobs:
       VITE_FIREBASE_MEASUREMENT_ID: ${{ secrets.VITE_FIREBASE_MEASUREMENT_ID }}
       VITE_FIREBASE_VAPID_KEY: ${{ secrets.VITE_FIREBASE_VAPID_KEY }}
 
-    defaults:
-      run:
-        working-directory: ./price-gold
-
     steps:
       - name: Check out code
         uses: actions/checkout@v4
@@ -115,25 +111,30 @@ jobs:
           cache-dependency-path: "price-gold/pnpm-lock.yaml"
 
       - name: Install dependencies
+        working-directory: ./price-gold
         run: pnpm install --frozen-lockfile
 
       - name: Build
+        working-directory: ./price-gold
         run: pnpm build
 
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
 
       - name: Pull Vercel Environment Information
+        working-directory: ./price-gold
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Deploy Project Artifacts to Vercel
+        working-directory: ./price-gold
         run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} > deployment-url.txt
 
       - name: Get deployment URL
         id: deployment
+        working-directory: ./price-gold
         run: echo "url=$(cat deployment-url.txt)" >> $GITHUB_OUTPUT
 
       - name: Deployment Summary
         run: |
-          echo "🚀 Deployment completed successfully!"
-          echo "🔗 URL: ${{ steps.deployment.outputs.url }}"
+          echo "Deployment completed successfully!"
+          echo "URL: ${{ steps.deployment.outputs.url }}"
